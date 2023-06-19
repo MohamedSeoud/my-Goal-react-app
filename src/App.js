@@ -11,6 +11,7 @@ const App = () => {
   ]);
 
   const addGoalHandler = enteredText => {
+    if(enteredText.trim().length===0){return;}
     setCourseGoals(prevGoals => {
       const updatedGoals = [...prevGoals];
       updatedGoals.unshift({ text: enteredText, id: Math.random().toString() });

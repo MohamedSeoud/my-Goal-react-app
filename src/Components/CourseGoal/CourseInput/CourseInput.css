@@ -2,6 +2,8 @@
   margin: 0.5rem 0;
 }
 
+
+
 .form-control label {
   font-weight: bold;
   display: block;
@@ -19,6 +21,11 @@
 
 .form-control input:focus {
   outline: none;
-  background: #fad0ec;
+  background: #ffffff;
   border-color: #8b005d;
+}
+
+.form-control.invalid input{
+  border-color: red;
+  background-color: #f4afd2;
 }
